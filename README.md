@@ -32,6 +32,11 @@ Data type | String
 `Float32Array` | "float32"
 `Float64Array` | "float64"
 `Array` | "array"
+`Uint8ClampedArray` | "uint8_clamped"
+`ArrayBuffer` | "generic"
+`ArrayBuffer` | "buffer"
+`ArrayBuffer` | "data"
+`ArrayBuffer` | "dataview"
 
 ## install
 
