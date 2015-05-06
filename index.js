@@ -18,5 +18,12 @@ module.exports = function(dtype) {
       return Float64Array
     case 'array':
       return Array
+    case 'uint8_clamped':
+      return Uint8ClampedArray
+    case 'generic':
+    case 'buffer':
+    case 'data':
+    case 'dataview':
+      return ArrayBuffer
   }
 }

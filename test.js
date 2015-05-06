@@ -2,7 +2,7 @@ var test = require('tape')
 var dtype = require('./')
 
 test('dtype', function(t) {
-  t.plan(9)
+  t.plan(11)
   var arr = new (dtype('int8'))
   t.ok(arr instanceof Int8Array)
   arr = new (dtype('int16'))
@@ -21,4 +21,8 @@ test('dtype', function(t) {
   t.ok(arr instanceof Float64Array)
   arr = new (dtype('array'))
   t.ok(arr instanceof Array)
+  arr = new (dtype('uint8_clamped'))
+  t.ok(arr instanceof Uint8ClampedArray)
+  arr = new (dtype('buffer'))
+  t.ok(arr instanceof ArrayBuffer)
 })
