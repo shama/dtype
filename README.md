@@ -51,8 +51,9 @@ npm install dtype
 Use [browserify](http://browserify.org) to `require('dtype')`.
 
 ## release history
+* 1.0.0 - Add uint8_clamped, generic, data, dataview and buffer types
 * 0.1.0 - initial release
 
 ## license
-Copyright (c) 2013 Kyle Robinson Young<br/>
+Copyright (c) 2015 Kyle Robinson Young<br/>
 Licensed under the MIT license.
