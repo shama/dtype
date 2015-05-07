@@ -21,9 +21,11 @@ module.exports = function(dtype) {
     case 'uint8_clamped':
       return Uint8ClampedArray
     case 'generic':
-    case 'buffer':
     case 'data':
     case 'dataview':
       return ArrayBuffer
+    case 'buffer':
+      if (typeof Buffer === "undefined") return ArrayBuffer
+      return Buffer
   }
 }

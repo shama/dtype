@@ -23,6 +23,6 @@ test('dtype', function(t) {
   t.ok(arr instanceof Array)
   arr = new (dtype('uint8_clamped'))
   t.ok(arr instanceof Uint8ClampedArray)
-  arr = new (dtype('buffer'))
-  t.ok(arr instanceof ArrayBuffer)
+  arr = new (dtype('buffer'))(0)
+  t.ok(arr instanceof Buffer)
 })
