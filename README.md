@@ -34,9 +34,11 @@ Data type | String
 `Array` | "array"
 `Uint8ClampedArray` | "uint8_clamped"
 `ArrayBuffer` | "generic"
-`ArrayBuffer` | "buffer"
 `ArrayBuffer` | "data"
 `ArrayBuffer` | "dataview"
+`Buffer` | "buffer"
+
+> If `Buffer` is not present then `"buffer"` will return `ArrayBuffer`.
 
 ## install
 
