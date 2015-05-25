@@ -23,6 +23,5 @@ test('dtype', function(t) {
   t.ok(arr instanceof Array)
   arr = new (dtype('uint8_clamped'))
   t.ok(arr instanceof Uint8ClampedArray)
-  arr = new (dtype('buffer'))(0)
-  t.ok(arr instanceof Buffer)
+  t.equal(dtype('buffer'), undefined, 'returns undefined for non-array types')
 })
