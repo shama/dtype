@@ -5,6 +5,8 @@ Return a data type from a string representing the data type.
 Mostly useful for using with [ndarray](https://github.com/mikolalysenko/ndarray)
 where you would like instantiate a typed array of the same `array.dtype`.
 
+See [ndarray-dtype](https://www.npmjs.com/package/ndarray-dtype) if you need to support Buffer and other ndarray types.
+
 ## example
 
 ```js
@@ -33,12 +35,8 @@ Data type | String
 `Float64Array` | "float64"
 `Array` | "array"
 `Uint8ClampedArray` | "uint8_clamped"
-`ArrayBuffer` | "generic"
-`ArrayBuffer` | "data"
-`ArrayBuffer` | "dataview"
-`Buffer` | "buffer"
 
-> If `Buffer` is not present then `"buffer"` will return `ArrayBuffer`.
+Returns `undefined` if the type isn't recognized.
 
 ## install
 
@@ -50,7 +48,12 @@ npm install dtype
 
 Use [browserify](http://browserify.org) to `require('dtype')`.
 
+## see also
+
+- [ndarray-dtype](https://www.npmjs.com/package/ndarray-dtype)
+
 ## release history
+* 2.0.0 - moving buffer, generic and data to a different module
 * 1.0.0 - Add uint8_clamped, generic, data, dataview and buffer types
 * 0.1.0 - initial release
 
